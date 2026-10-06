@@ -4,7 +4,7 @@
 
 Built for **aeoflo AB** (Stockholm) as part of my MSc dissertation in Data Science for Business at the University of Stirling, through the Work-Based Learning programme.
 
-The goal of this project was to build a machine learning pipeline that predicts whether a marketing campaign will succeed or fail, based on its setup and targeting — before it goes live. It covers everything from exploratory data analysis and feature engineering to model comparison and a live interactive demo presented to the company's co-founder and CEO.
+The goal of this project was to build a machine learning pipeline that predicts whether a marketing campaign will succeed or fail, based on its setup and targeting. Before it goes live. It covers everything from exploratory data analysis and feature engineering to model comparison and a live interactive demo presented to the company's co-founder and CEO.
 
 > **Note on datasets:** The files in this repo are sample extracts only. Full data has been withheld under a confidentiality agreement with aeoflo AB.
 
@@ -30,7 +30,7 @@ The full Facebook dataset is publicly available on Kaggle. The full Social Media
 
 The project ran through three iterations.
 
-**Iteration 1** used the Facebook dataset to build the composite scoring framework and run a first classification pipeline. This is where I found a data leakage problem — some features were post-campaign outcomes, not pre-campaign inputs. The model looked accurate but was cheating.
+**Iteration 1** used the Facebook dataset to build the composite scoring framework and run a first classification pipeline. This is where I found a data leakage problem. Some features were post-campaign outcomes, not pre-campaign inputs. The model looked accurate but was cheating.
 
 **Iteration 2** switched to the multi-channel dataset and used only pre-campaign features. Accuracy dropped, which was expected — the model was now making real predictions from information you actually have before launching.
 
@@ -48,7 +48,7 @@ Test set performance (400 rows, 200 per class):
 | Decision Tree | 78.5% | 77% | 78% | 77% | ~2% |
 | Random Forest | 74.5% | 76% | 81% | 78% | ~4% |
 
-Logistic Regression was chosen as the final model. The 85% recall mattered most — it's better to flag a campaign that might fail than to miss one that could have worked. The 0.31% train/test gap shows it's not overfitting.
+Logistic Regression was chosen as the final model. The 85% recall mattered most. It's better to flag a campaign that might fail than to miss one that could have worked. The 0.31% train/test gap shows it's not overfitting.
 
 ## Key Takeaways
 
