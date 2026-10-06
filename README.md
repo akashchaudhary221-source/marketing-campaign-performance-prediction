@@ -1,5 +1,3 @@
-[README (1).md](https://github.com/user-attachments/files/33103003/README.1.md)
-
 # Marketing Campaign Performance Prediction System
 
 Built for **aeoflo AB** (Stockholm) as part of my MSc dissertation in Data Science for Business at the University of Stirling, through the Work-Based Learning programme.
@@ -16,7 +14,7 @@ aeoflo AB runs marketing campaigns across Facebook, Instagram, Pinterest, and Tw
 
 Two datasets were used across three modelling iterations.
 
-The first was a Facebook Ads dataset from Kaggle with 1,143 rows. After cleaning out corrupted rows and zero-spend campaigns, 558 records were usable. It was good for getting started but limited — only ages 30 to 49, anonymous interest codes, and Facebook only.
+The first was a Facebook Ads dataset from Kaggle with 1,143 rows. After cleaning out corrupted rows and zero-spend campaigns, 558 records were usable. It was good for getting started but limited. Only ages 30 to 49, anonymous interest codes, and Facebook only.
 
 The second was a Social Media Advertising dataset from Kaggle with over 300,000 rows covering four platforms. A 2,000-row stratified sample was used for the final model (random_state=42), giving much better coverage across channels.
 
@@ -52,7 +50,7 @@ Logistic Regression was chosen as the final model. The 85% recall mattered most.
 
 ## Key Takeaways
 
-No revenue data means no ROI prediction — that was the hard constraint. Reframing it as success/failure classification still gives the client something actionable.
+No revenue data means no ROI prediction. That was the hard constraint. Reframing it as success/failure classification still gives the client something actionable.
 
 Removing data leakage hurt accuracy short-term but was the right call. The final model's numbers are honest.
 
